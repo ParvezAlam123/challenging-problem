@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Challenging Problem}
+\author{Parvez Alam : AI21RESCH01005 }
+\date{April 2021}
+
+\begin{document}
+
+\maketitle
+\begin{multicols}{2}
+\section{Problem}
+\textbf{Two points are chosen at random on a line of unit length. What is the probability that the three line segments so formed will have a length greater than 1/4 ?} \\
+\textbf{Solution: }
+Let the line segment be PQ and the points be A, B. \\
+let the length of PA be x, and length of AB be y then 
+
+   length of BQ &=1-(x+y) 
+\begin{align}
+    x &>0.25 \nonumber \\
+    y &>0.25 \nonumber \\
+    x+y &<0.75 \nonumber 
+\end{align}
+\includegraphics[width=\columnwidth]{c1.png}
+Favourable cases=area of the above triangle=\(\frac{1}{32}\)  \\ 
+Sample space will be represented by
+\[x+y<1\]
+\includegraphics[width=\columnwidth]{c2.png}
+sample space = area of the above triangle=\(\frac{1}{2}\) 
+\begin{align}
+    Probability &=\frac{\frac{1}{32}}{\frac{1}{2}} \nonumber\\
+                &=\frac{1}{32}\times 2 \nonumber \\
+                &=\frac{1}{16} \nonumber
+\end{align}
+
+
+
+
+
+\end{multicols}
+\end{document}
